@@ -34,7 +34,7 @@
 
 ![구성도](images/구성도.png)
 
-![flow_chart](images/flow_chart.drawio.png)
+![flowchart](images/flow_chart.drawio.png)
 
 ---
 
