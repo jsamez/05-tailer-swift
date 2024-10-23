@@ -30,15 +30,40 @@
 
 ## 시스템 아키텍처
 
+![아키텍쳐](images/아키텍쳐.png)
+
+![구성도](images/구성도.png)
+
+![flow_chart](images/flow_chart.drawio.png)
+
 ---
 
 ## 개발 진행 상황
 
+![간트차트](images/ganttchart.png)
 
 ---
 
 ## 결과
 
+![객체 인식](images/Object_Detection.gif)
+- 다음 프레임에도 사용자를 인식하기 위해 IOU방식을 채택해서 진행함.
+- 이때 사용자를 완전히 가리거나, 사용자 위치에 다른사람이 있을경우 다른 사람을 사용자로 인식함.
+
+![거리 추정](images/Depth_Estimaion.gif)
+- monodepth모델의 경우 상대적인 거리를 추정하는 모델이라 depth의 값이 갑자기 변화하는 문제가 발생함.
+- Cropped image를 사용하여 사용자만 있는 사진을 입력하여 사용자만의 거리를 측정하게 함.
+- 이 과정에서 노이즈가 발생, 가우시안 블러를 이용하여 노이즈를 제거함
+- RGB chanel 보다 Blue chanel만 을 이용하여 값을 안정화함.
+
+![방향 추정](images/Direction_Estimation.gif)
+- 초기 구성에서 방향의 판단을 바운딩 박스가 전부 특정영역에 들어와야 다른 방향으로 가는걸인식
+- 이 과정에서 팔을 벌렸을때 바운딩 박스가 넘어 가지 않아 회전이 늦게 되는 문제가 발생
+- MediaPipe의 poseestimation을 이용하여 어깨를 추측하여 바운딩 박스의 크기를 고정
+- 바운딩 박스보단 어깨의 중심이 어느 영역에 위치했는가를 추정하여 방향을 결정 -> 딜레이가 줄어듬
+
+![명령 전송](images/Forward_and_Stop.gif)
+- 시간관계상 서버를 통한 통신은 제작이 불가능 하여 테스트때 사용하던 Rc car앱의 Bluetooth protocol를 이용하여 구현
 
 ---
 
