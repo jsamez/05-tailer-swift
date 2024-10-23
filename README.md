@@ -10,7 +10,7 @@
 5. [결과](#결과)
 6. [고찰](#고찰)
 7. [향후 과제](#향후-과제)
-
+8. [발표 자료](#발표-자료)
 ---
 
 ## 개요
@@ -47,5 +47,9 @@
 ---
 
 ## 향후 과제
+
+---
+## 발표 자료
+https://docs.google.com/presentation/d/1gs7zfCVsGriqfyBAdbsQSrKQAs58_GKxZbZFjJTXn0Q/edit?usp=sharing
 
 
