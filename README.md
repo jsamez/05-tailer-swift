@@ -30,10 +30,16 @@
 
 ## 시스템 아키텍처
 
+- 아키텍쳐
+  
 ![아키텍쳐](images/아키텍쳐.png)
+
+-구성도
 
 ![구성도](images/구성도.png)
 
+- flowchart
+  
 ![flowchart](images/flow_chart.drawio.png)
 
 ---
