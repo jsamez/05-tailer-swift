@@ -71,7 +71,6 @@
 ![명령 전송](images/Forward_and_Stop.gif)
 - 시간관계상 서버를 통한 통신은 제작이 불가능 하여 테스트때 사용하던 Rc car앱의 Bluetooth protocol를 이용하여 구현
 
-![시연영상](images/시연영상.mp4)
 
 ---
 
